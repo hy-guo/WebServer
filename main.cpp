@@ -16,12 +16,12 @@
 
 int main(int argc, char *argv[])
 {
-    int port, num_threads = NUM_THREADS;
-    if (argc <= 1)
-        port = 80;
-    else
+    int port=80, num_threads = NUM_THREADS;
+
+    if (argc > 1)
         port = atoi(argv[1]);
     printf("Use Port %d\n", port);
+    
     if (argc > 2)
         num_threads = atoi(argv[2]);
 
