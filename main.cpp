@@ -65,7 +65,6 @@ int main(int argc, char *argv[])
         }
         for (int i = 0; i < events_num; i++)
         {
-
             int sock_fd = events[i].data.fd;
 
             if (sock_fd == listen_fd)
