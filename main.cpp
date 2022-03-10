@@ -69,7 +69,6 @@ int main(int argc, char *argv[])
 
             if (sock_fd == listen_fd)
             {
-
                 struct sockaddr_in client_address;
                 socklen_t client_addrlength = sizeof(client_address);
                 int conn_fd = accept(listen_fd, (struct sockaddr *)&client_address, &client_addrlength);
